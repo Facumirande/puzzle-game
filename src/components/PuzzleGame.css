@@ -57,7 +57,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-image: url('./App/img/gameBoard.jpg'); 
+    background-image: url('../../public/img/gameBoard.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -74,7 +74,7 @@
   }
   
   .navbar-size{
-    background-image: url('../img/navVarBoard.jpg'); 
+    background-image: url('../../public/img/navVarBoard.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
     overflow: hidden; 
