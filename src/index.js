@@ -1,15 +1,11 @@
+// src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client'; // Importa createRoot desde react-dom/client
 import App from './App';
 
-const rootElement = document.getElementById('root');
-if (rootElement) {
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-} else {
-  console.error("No se encontró el contenedor #root en el HTML");
-}
+const root = ReactDOM.createRoot(document.getElementById('root')); // Crea el root para renderizar
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

@@ -1,0 +1,108 @@
+/* public/style.css */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .PiezasJuego {
+    position: absolute;
+    cursor: pointer;
+    width: 57.9vh;
+    height: auto;
+    object-fit: cover;
+    z-index: 3;
+  }
+  
+  .elephant-size {
+    width: 80vh;
+    height: auto;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .img-container {
+    display: inline-flex;
+    margin-left: 9vh;
+    margin-top: 5vh;
+  }
+  
+  .cuadricula {
+    width: 96.8vh;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    object-fit: cover;
+    left: 0vh;
+    top: 3.5vh;
+    pointer-events: none;
+  }
+  
+  /* Configuración del fondo de la página */
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/gameBoard.jpg'); /* Ruta absoluta sin %PUBLIC_URL% */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container-center {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  /* Configuración de la barra de navegación */
+  .navbar-size {
+    background-image: url('/img/navVarBoard.jpg'); /* Ruta absoluta sin %PUBLIC_URL% */
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 5vh;
+  }
+  
+  .sound-switch {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1vh;
+    z-index: 3;
+  }
+  
+  .piecesBoard {
+    width: 60vh;
+    height: 59.5vh;
+    position: absolute;
+    z-index: -3;
+  }
+  
+  .crayon {
+    position: absolute;
+    width: 50vh;
+    height: auto;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    z-index: -3;
+  }
+  
+  .btn-position {
+    position: absolute;
+  }
+  

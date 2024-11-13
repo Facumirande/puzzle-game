@@ -1,16 +1,28 @@
-import React, { useEffect } from 'react';
-import Swal from 'sweetalert2';
+// src/App.jsx
+import React, { useState } from 'react';
+import PuzzleBoard from '../src/components/PuzzleBoard'
 
-const Game = () => {
+function App() {
+  const [showIntro, setShowIntro] = useState(true);
 
-    useEffect(() => {
-        Swal.fire('Welcome to the Game!');
-    }, []);
+  const handleAccept = () => {
+    setShowIntro(false);
+  };
 
-    return (
-        <>
-        </>
-    );
-};
+  return (
+    <div className="App">
+      {showIntro ? (
+        <div className="center">
+          <div className="intro">
+            <h1>Bienvenido al Juego de Puzzle</h1>
+            <button onClick={handleAccept} className="btn btn-primary">Aceptar</button>
+          </div>
+        </div>
+      ) : (
+        <PuzzleBoard />
+      )}
+    </div>
+  );
+}
 
-export default Game;
+export default App;
